@@ -2,3 +2,9 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --background-color: #000028;
+  --font-color: #f1b2ce;
+  --primary-accent-color: #ff0070;
+  --secondary-accent-color: #dd00ff;
+}

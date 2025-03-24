@@ -3,32 +3,31 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
-  background-attachment: fixed;
-  background-size: 120%;
   background-repeat: no-repeat;
   background-position: center 0;
+  background-size: 120%;
+  background-attachment: fixed;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  padding: 20px;
 }
 
 .header__theme-menu-list {
   display: flex;
-  column-gap: 10px;
   justify-content: center;
+  column-gap: 10px;
 }
 
 .header__theme-menu-button {
-  appearance: none;
   width: 70px;
   height: 26px;
-  text-transform: lowercase;
-  background-color: transparent;
   border:none;
   color: var(--primary-accent-color);
+  text-transform: lowercase;
+  background-color: transparent;
+  appearance: none;
 }
 
 .header__theme-menu-button_active {
@@ -41,9 +40,9 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   /* подчеркивание при фокусе */
   box-shadow: 0px 1px 0px 0px var(--primary-accent-color);
+  outline: none;
 }
 
 .header__jumbotron {
@@ -56,15 +55,15 @@
 }
 
 .header__title {
-  color: var(--secondary-accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  text-shadow: 4px 4px 0 var(--primary-accent-color);
-  letter-spacing: 83%;
-  font-weight: bold;
+  grid-area: title;
+  margin-inline-start: -20px;
   padding-block-start: 15rem;
   padding-block-end: 7%;
-  margin-inline-start: -20px;
-  grid-area: title;
+  color: var(--secondary-accent-color);
+  font-weight: bold;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  letter-spacing: 83%;
+  text-shadow: 4px 4px 0 var(--primary-accent-color);
 }
 
 .header__text {
@@ -75,33 +74,35 @@
 .title-decor {
   color: var(--background-color);
   font-weight: bold;
-  background-color: var(--primary-accent-color);
   font-size: 18px;
+  background-color: var(--primary-accent-color);
 }
 
 .decorated-zone {
   position: relative;
+  padding: 20px;
 }
+
 .decorated-zone:before {
   content: '';
-  border-bottom: var(--primary-accent-color) 1px solid;
-  border-left: var(--primary-accent-color) 1px solid;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   width: 25px;
   height: 25px;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+  border-bottom: var(--primary-accent-color) 1px solid;
+  border-left: var(--primary-accent-color) 1px solid;
 }
 
 .decorated-zone:after {
   content: '';
-  border-top: var(--primary-accent-color) 1px solid;
-  border-right: var(--primary-accent-color) 1px solid;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 25px;
   height: 25px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  border-top: var(--primary-accent-color) 1px solid;
+  border-right: var(--primary-accent-color) 1px solid;
 }
 
 .header__camera-sign {
@@ -115,23 +116,23 @@
 }
 
 .header__camera-sign::after {
-  background: var(--primary-accent-color);
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
   content: '';
-  display: block;
   position:absolute;
   top: 7px;
   right: -18px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--primary-accent-color);
+  background: var(--primary-accent-color);
 }
 
 .main {
-  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   row-gap: 80px;
+  padding: 60px 20px;
 }
 
 .main__content {
@@ -206,4 +207,18 @@
 
 .vertical-span {
   grid-row: span 2 / auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 768px;
+}
+
+.footer__text {
+  color: var(--secondary-accent-color);
+  font-weight: bold;
+  font-size: 157px;
+  text-shadow: 2px 2px 0 var(--primary-accent-color);
 }

@@ -1,13 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--background-color);
   background-image: var(--url-background-image);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 120%;
   background-attachment: fixed;
-  background-color: var(--background-color);
 }
 
 .header {
@@ -170,6 +170,18 @@
 
 .content__text {
   line-height: 130%;
+}
+
+.content__link {
+  display: inline-block;
+  border-block-end: var(--font-color) 1px solid;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--background-heading-color);
+}
+
+.content__link:focus {
+  outline: var(--font-color) 1px solid;
+  outline-offset: -1px;
 }
 
 .display-block {

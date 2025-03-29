@@ -129,6 +129,10 @@
   background: var(--menu-font-color);
 }
 
+.theme_light .header__camera-sign {
+  display: none;
+}
+
 .main {
   display: flex;
   flex-direction: column;

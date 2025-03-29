@@ -2,11 +2,12 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--url-background-image);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 120%;
   background-attachment: fixed;
+  background-color: var(--background-color);
 }
 
 .header {
@@ -24,24 +25,23 @@
   width: 70px;
   height: 26px;
   border:none;
-  color: var(--primary-accent-color);
+  color: var(--menu-font-color);
   text-transform: lowercase;
   background-color: transparent;
   appearance: none;
 }
 
 .header__theme-menu-button_active {
-  border: var(--primary-accent-color) 1px solid;
+  border: var(--menu-font-color) 1px solid;
 }
 
 .header__theme-menu-button:hover {
-  /* TODO: сделать прозрачность 40% */
-  border: var(--primary-accent-color) 1px solid; 
+  border: var(--hover-menu-link-color) 1px solid; 
 }
 
 .header__theme-menu-button:focus-visible {
   /* подчеркивание при фокусе */
-  box-shadow: 0px 1px 0px 0px var(--primary-accent-color);
+  box-shadow: 0px 1px 0px 0px var(--menu-font-color);
   outline: none;
 }
 
@@ -59,11 +59,11 @@
   margin-inline-start: -20px;
   padding-block-start: 15rem;
   padding-block-end: 7%;
-  color: var(--secondary-accent-color);
+  color: var(--main-heading-color);
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   letter-spacing: 83%;
-  text-shadow: 4px 4px 0 var(--primary-accent-color);
+  text-shadow: 4px 4px 0 var(--main-heading-shadow-color);
 }
 
 .header__text {
@@ -72,10 +72,10 @@
 }
 
 .title-decor {
-  color: var(--background-color);
+  color: var(--text-heading-color);
   font-weight: bold;
   font-size: 18px;
-  background-color: var(--primary-accent-color);
+  background-color: var(--background-heading-color);
 }
 
 .decorated-zone {
@@ -90,8 +90,8 @@
   left: 20px;
   width: 25px;
   height: 25px;
-  border-bottom: var(--primary-accent-color) 1px solid;
-  border-left: var(--primary-accent-color) 1px solid;
+  border-bottom: var(--menu-font-color) 1px solid;
+  border-left: var(--menu-font-color) 1px solid;
 }
 
 .decorated-zone:after {
@@ -101,8 +101,8 @@
   right: 20px;
   width: 25px;
   height: 25px;
-  border-top: var(--primary-accent-color) 1px solid;
-  border-right: var(--primary-accent-color) 1px solid;
+  border-top: var(--menu-font-color) 1px solid;
+  border-right: var(--menu-font-color) 1px solid;
 }
 
 .header__camera-sign {
@@ -112,7 +112,7 @@
 
 .header__camera-sign::before {
   content: 'REC';
-  color: var(--primary-accent-color);
+  color: var(--menu-font-color);
 }
 
 .header__camera-sign::after {
@@ -124,8 +124,8 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--primary-accent-color);
-  background: var(--primary-accent-color);
+  box-shadow: 0 0 4px 2px var(--menu-font-color);
+  background: var(--menu-font-color);
 }
 
 .main {
@@ -142,7 +142,7 @@
 }
 
 .content__title {
-  color: var(--primary-accent-color);
+  color: var(--menu-font-color);
   font-size: 18px;
 }
 
@@ -217,8 +217,8 @@
 }
 
 .footer__text {
-  color: var(--secondary-accent-color);
+  color: var(--main-heading-color);
   font-weight: bold;
   font-size: 157px;
-  text-shadow: 2px 2px 0 var(--primary-accent-color);
+  text-shadow: 2px 2px 0 var(--main-heading-shadow-color);
 }

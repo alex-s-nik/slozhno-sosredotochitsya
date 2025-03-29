@@ -33,6 +33,7 @@
 
 .header__theme-menu-button_active {
   border: var(--menu-font-color) 1px solid;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {

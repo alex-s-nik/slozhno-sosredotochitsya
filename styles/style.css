@@ -249,10 +249,36 @@
 }
 
 @media(max-width: 375px) {
-  .main {
-    row-gap: 40px;
-    padding-block: 40px;
+  .decorated-zone {
+    padding: 10px;
   }
+
+  .decorated-zone:before {
+    content: '';
+    inset-block-end: 10px;
+    inset-inline-start: 10px;
+  }
+  
+  .decorated-zone:after {
+    content: '';
+    inset-block-start: 10px;
+    inset-inline-end: 10px;
+  }
+
+  .header__camera-sign {
+    inset-inline-end: 38px;
+    inset-block-start: 10px;
+  }
+
+  .header__title {
+    margin-inline-start: 0;
+  }
+  
+  .main {
+    row-gap: 50px;
+    padding: 40px 10px;
+  }
+
   .header__text {
     width: 100%;
   }
@@ -260,7 +286,13 @@
   .main__content {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .content__section-columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
   }
 
   .title-over-columns {

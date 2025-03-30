@@ -54,6 +54,9 @@
 
 .header__title {
   margin-inline-start: -20px;
+}
+
+.large-shaded {
   color: var(--main-heading-color);
   font-weight: bold;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -143,12 +146,14 @@
   font-size: 18px;
 }
 
+/* правило для размещения текста в одну колонку рядом с заголовком */
 .content__section-column {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
+/* правило размещения текста в несколько колонок под заголовком */ 
 .content__section-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -189,7 +194,7 @@
 
 .title-over-columns {
   display: block;
-  width: 33%;
+  width: 30%;
 }
 
 .main__gallery {
@@ -222,17 +227,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 768px;
+  height: 100vh;
 }
 
-.footer__text {
-  color: var(--main-heading-color);
-  font-weight: bold;
-  font-size: 157px;
-  text-shadow: 2px 2px 0 var(--main-heading-shadow-color);
-}
-
-@media(max-width: 786px) {
+@media(max-width: 768px) {
   .header__theme-menu {
     flex-direction: column;
   }
@@ -245,5 +243,10 @@
 
   .header__title {
     letter-spacing: -0.01em;
+  }
+
+  .content__section-columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 }

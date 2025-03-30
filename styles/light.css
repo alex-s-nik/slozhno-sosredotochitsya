@@ -29,7 +29,7 @@
 }
 
 @media(max-width: 768px) {
-  .header__title {
+  .large-shaded {
     text-shadow: 4px 4px 0 var(--background-heading-color);
   }
 }

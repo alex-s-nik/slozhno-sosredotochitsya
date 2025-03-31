@@ -147,14 +147,14 @@
 }
 
 /* правило для размещения текста в одну колонку рядом с заголовком */
-.content__section-column {
+.content__section {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
 /* правило размещения текста в несколько колонок под заголовком */ 
-.content__section-columns {
+.content__section-special {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
@@ -258,7 +258,7 @@
     column-gap: 20px;
   }
 
-  .content__section-columns {
+  .content__section-special {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     line-height: 125%;
@@ -306,7 +306,7 @@
     row-gap: 20px;
   }
 
-  .content__section-columns {
+  .content__section-special {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 20px;

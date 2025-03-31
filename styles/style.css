@@ -173,9 +173,13 @@
 
 .content__link {
   display: inline-block;
-  border-block-end: var(--font-color) 1px solid;
+  border-block-end: transparent 1px solid;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--background-heading-color);
+}
+
+.content__link:hover {
+  border-block-end: var(--font-color) 1px solid;
 }
 
 .content__link:focus {

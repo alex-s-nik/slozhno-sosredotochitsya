@@ -1,4 +1,11 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --background-color: #000028;
+  --font-color: #f1b2ce;
+  --background-heading-color: #ff0070;
+  --text-heading-color: #000028;
+  --main-heading-color: #db00ff;
+  --main-heading-shadow-color: #ff0070;
+  --menu-font-color: #ff0070;
+  --hover-menu-link-color: rgba(255, 0, 112, .4);
+  --url-background-image: url(../images/cover-image-dark.png);
+}

@@ -1,12 +1,39 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-color: #fff1f7;
+  --font-color: #353430;
+  --background-heading-color: #ff8dcb;
+  --text-heading-color: #353430;
+  --main-heading-color: #ffc2e6;
+  --main-heading-shadow-color: #ff0070;
+  --menu-font-color: #353430;
+  --hover-menu-link-color: rgba(50, 49, 45, .4);
+  --url-background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .header__camera-sign {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .large-shaded {
+    text-shadow: 4px 4px 0 var(--background-heading-color);
+  }
+}
+
+@media(prefers-color-scheme: light) {
+  :root {
+    --background-color: #fff1f7;
+    --font-color: #353430;
+    --background-heading-color: #ff8dcb;
+    --text-heading-color: #353430;
+    --main-heading-color: #ffc2e6;
+    --main-heading-shadow-color: #ff0070;
+    --menu-font-color: #353430;
+    --hover-menu-link-color: rgba(50, 49, 45, .4);
+    --url-background-image: url(../images/cover-image-light.png);
+  }
+
+  .header__camera-sign {
+    display: none;
+  }
 }

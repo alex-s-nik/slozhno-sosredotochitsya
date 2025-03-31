@@ -225,6 +225,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 668px;
 }
 
 .footer > .large-shaded {

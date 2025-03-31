@@ -242,9 +242,14 @@
     letter-spacing: -0.01em;
   }
 
+  .main__content {
+    column-gap: 20px;
+  }
+
   .content__section-columns {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    line-height: 125%;
   }
 }
 
@@ -293,6 +298,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 20px;
+    line-height: 135%;
   }
 
   .title-over-columns {

@@ -24,22 +24,25 @@
 }
 
 .header__theme-menu-button {
-  width: 70px;
-  height: 26px;
+  min-width: 70px;
+  min-height: 26px;
   border:none;
+  padding-block: 0;  /* выравнивание надписи по центру */
   color: var(--menu-font-color);
+  line-height: 1em;  /* выравнивание надписи по центру */
   text-transform: lowercase;
   background-color: transparent;
+  cursor: pointer;
   appearance: none;
 }
 
 .header__theme-menu-button_active {
-  border: var(--menu-font-color) 1px solid;
+  outline: var(--menu-font-color) 1px solid;
   pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-  border: var(--hover-menu-link-color) 1px solid; 
+  outline: var(--hover-menu-link-color) 1px solid; 
 }
 
 .header__theme-menu-button:focus-visible {

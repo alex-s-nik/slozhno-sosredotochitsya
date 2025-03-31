@@ -227,6 +227,10 @@
   height: 100vh;
 }
 
+.footer > .large-shaded {
+  text-shadow: 2px 2px 0 var(--main-heading-shadow-color);
+}
+
 @media(max-width: 1023px) {
   .header__theme-menu {
     flex-direction: column;
